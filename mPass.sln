@@ -2,6 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mPass.API", "mPass.API\mPass.API.csproj", "{6889FA98-C4CC-441F-8284-FFD546EA9CB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mPass.Persistence", "mPass.Persistence\mPass.Persistence.csproj", "{3132F919-EA3F-42E6-A959-A98CEEF1CAD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mPass.Application", "mPass.Application\mPass.Application.csproj", "{587D575F-2E28-414D-BD0C-E29528FCEFB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mPass.Infrastructure", "mPass.Infrastructure\mPass.Infrastructure.csproj", "{92ADB310-28BB-415B-8091-CFD27D11EEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mPass.Domain", "mPass.Domain\mPass.Domain.csproj", "{76E41985-871F-4430-AB40-65E218F3A22D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mPass.Domain.Tests", "Tests\mPass.Domain.Tests\mPass.Domain.Tests.csproj", "{469634B7-9F65-41B7-9266-EDE87313E901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +22,25 @@ Global
 		{6889FA98-C4CC-441F-8284-FFD546EA9CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6889FA98-C4CC-441F-8284-FFD546EA9CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6889FA98-C4CC-441F-8284-FFD546EA9CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3132F919-EA3F-42E6-A959-A98CEEF1CAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3132F919-EA3F-42E6-A959-A98CEEF1CAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3132F919-EA3F-42E6-A959-A98CEEF1CAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3132F919-EA3F-42E6-A959-A98CEEF1CAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587D575F-2E28-414D-BD0C-E29528FCEFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587D575F-2E28-414D-BD0C-E29528FCEFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587D575F-2E28-414D-BD0C-E29528FCEFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587D575F-2E28-414D-BD0C-E29528FCEFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92ADB310-28BB-415B-8091-CFD27D11EEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92ADB310-28BB-415B-8091-CFD27D11EEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92ADB310-28BB-415B-8091-CFD27D11EEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92ADB310-28BB-415B-8091-CFD27D11EEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E41985-871F-4430-AB40-65E218F3A22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E41985-871F-4430-AB40-65E218F3A22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E41985-871F-4430-AB40-65E218F3A22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E41985-871F-4430-AB40-65E218F3A22D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469634B7-9F65-41B7-9266-EDE87313E901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469634B7-9F65-41B7-9266-EDE87313E901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469634B7-9F65-41B7-9266-EDE87313E901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469634B7-9F65-41B7-9266-EDE87313E901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

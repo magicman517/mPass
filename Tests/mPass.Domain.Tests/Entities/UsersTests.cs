@@ -21,8 +21,8 @@ public class UsersTests
         {
             Email = email,
             Username = username,
-            Salt = salt,
-            Verifier = verifier
+            SrpSalt = salt,
+            SrpVerifier = verifier
         };
 
         user.Id.Should().NotBeEmpty();
@@ -34,8 +34,8 @@ public class UsersTests
 
         user.Email.Should().Be(email);
         user.Username.Should().Be(username);
-        user.Salt.Should().Be(salt);
-        user.Verifier.Should().Be(verifier);
+        user.SrpSalt.Should().Be(salt);
+        user.SrpVerifier.Should().Be(verifier);
     }
 
     [Fact]
@@ -44,8 +44,8 @@ public class UsersTests
         var user = new User
         {
             Email = "mail@example.com",
-            Salt = SampleSalt,
-            Verifier = SampleVerifier
+            SrpSalt = SampleSalt,
+            SrpVerifier = SampleVerifier
         };
 
         user.Id.Should().NotBeEmpty();
@@ -59,14 +59,14 @@ public class UsersTests
         var user1 = new User
         {
             Email = "test1@example.com",
-            Salt = SampleSalt,
-            Verifier = SampleVerifier
+            SrpSalt = SampleSalt,
+            SrpVerifier = SampleVerifier
         };
         var user2 = new User
         {
             Email = "test2@example.com",
-            Salt = SampleSalt,
-            Verifier = SampleVerifier
+            SrpSalt = SampleSalt,
+            SrpVerifier = SampleVerifier
         };
 
         user1.Id.Should().NotBe(user2.Id);
@@ -85,14 +85,14 @@ public class UsersTests
         {
             Email = email,
             Username = username,
-            Salt = salt,
-            Verifier = verifier
+            SrpSalt = salt,
+            SrpVerifier = verifier
         };
 
         user.Email.Should().Be(email);
         user.Username.Should().Be(username);
-        user.Salt.Should().Be(salt);
-        user.Verifier.Should().Be(verifier);
+        user.SrpSalt.Should().Be(salt);
+        user.SrpVerifier.Should().Be(verifier);
     }
 
     [Fact]
@@ -102,8 +102,8 @@ public class UsersTests
         {
             Email = "test@example.com",
             Username = null,
-            Salt = SampleSalt,
-            Verifier = SampleVerifier
+            SrpSalt = SampleSalt,
+            SrpVerifier = SampleVerifier
         };
 
         user.Username.Should().BeNull();

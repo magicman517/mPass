@@ -1,12 +1,9 @@
-using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore;
+namespace mPass.Domain.Entities;
 
-namespace mPass.Persistence.Entities;
-
-[Index(nameof(Email), IsUnique = true)]
 public class User : BaseEntity
 {
-    [MaxLength(256)] public required string Email { get; set; }
-    [MaxLength(100)] public string? Username { get; set; }
-    [MaxLength(512)] public required string PasswordHash { get; set; }
+    public required string Email { get; set; }
+    public string? Username { get; set; }
+    public required string SrpSalt { get; set; }
+    public required string SrpVerifier { get; set; }
 }

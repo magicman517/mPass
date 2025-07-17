@@ -1,6 +1,6 @@
 using NodaTime;
 
-namespace mPass.Persistence.Entities;
+namespace mPass.Domain.Entities;
 
 public abstract class BaseEntity
 {
