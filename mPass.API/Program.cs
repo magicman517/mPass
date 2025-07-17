@@ -12,8 +12,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.MapOpenApi();
     app.MapScalarApiReference("reference", opts =>
     {
@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
             .WithModels(false)
             .WithClientButton(false);
     });
-}
+// }
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
